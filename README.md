@@ -1,5 +1,19 @@
 # Quick-Notes-Containers
 
+## What is a container ?
+
+It's chroot on steroids.
+
+It's not quite like a VM: 
+  * uses the host kernel 
+  * can't boot a different OS 
+  * can't have its own modules 
+  * doesn't need init as PID 1 
+  * doesn't need syslogd, cron... 
+
+It's just a bunch of processes visible on the host machine (contrast with VMs which are opaque)
+
+
 Cgroups = limits how much you can use
 
 Namespaces = limits what you can see (and therefore use)
